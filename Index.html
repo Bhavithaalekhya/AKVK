@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My College Blog</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>My College Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About My College</h2>
+      <p>
+        Welcome to <strong>[ANDHRA KESARI VIDYA KENDRAM]</strong>! Our campus is a hub of knowledge, creativity, and student empowerment. From modern labs to a vibrant cultural scene, we're proud of what our students achieve!
+      </p>
+    </section>
+
+    <section id="results">
+      <h2>Latest Results</h2>
+      <ul>
+        <li>B.Sc Final Year – <strong>87%</strong> Passed</li>
+        <li>BCA – <strong>92%</strong> Passed</li>
+        <li>BA – <strong>85%</strong> Passed</li>
+        <li>B.COM – <strong>90%</strong> Passed</li>
+      </ul>
+    </section>
+
+    <section id="gallery">
+      <h2>College Gallery</h2>
+      <input type="file" accept="image/*" multiple onchange="previewMultipleImages(event)" />
+      <div id="gallery-preview" class="gallery-grid"></div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="contact-form" onsubmit="handleContactForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-response"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 [Your College Name]. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
